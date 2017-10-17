@@ -1,0 +1,53 @@
+div {
+  border: 1px solid black;
+}
+
+header {
+  width: 100%;
+}
+
+.logo {
+  display: inline-block;
+}
+
+nav.desktop {
+  display: inline-block;
+}
+
+.nav-mobile {
+ display: none;
+}
+
+nav.desktop ul li{
+  display: inline;
+  color: black;
+}
+
+.main-container {
+  display: flex;
+}
+
+.main-story {
+  flex-direction: row;
+}
+
+.container-learn {
+  display: flex;
+  flex-direction: row;
+}
+
+.title {
+
+}
+
+.top-row {
+  flex-direction: row;
+}
+
+.course {
+  flex-direction: row;
+}
+
+.course-categories-mobile {
+  display: none;
+}
