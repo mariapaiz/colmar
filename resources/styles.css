@@ -1,3 +1,7 @@
+html {
+  font-size: 16px;
+}
+
 * {
   font-family: "Raleway", sans-serif;
 }
@@ -77,15 +81,43 @@ nav.desktop ul li{
   flex-direction: row;
   padding: 2rem 1.5rem 2rem 1.5rem;
   background-color: #E0E0E0;
+  width: 60%;
 }
 
-.main-story .lg-image {
+.main-container .main-story .lg-image {
   background-image: url("images/information-main.jpg");
   margin-right: 1.5rem;
+  margin-bottom: 2rem;
+  width: 100%;
 }
 
-.lg-image {
-  max-width: 60%;
+.information p {
+  margin-top: 1.5rem;
+}
+.information span {
+  font-size: 0.75rem;
+}
+
+.side-story {
+  display: flex;
+  flex-direction: column;
+}
+
+.story {
+  display: flex;
+  flex-direction: row;
+}
+
+.sm-image #one {
+  background-image: url("images/information-orientation.jpg");
+}
+
+.sm-image #two {
+  background-image: url("images/information-campus.jpg");
+}
+
+.sm-image #one {
+  background-image: url("images/information-guest-lecture.jpg");
 }
 
 .container-learn {
