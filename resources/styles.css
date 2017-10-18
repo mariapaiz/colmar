@@ -58,18 +58,18 @@ nav.desktop ul li{
   background-color: #e0e0e0;
 }
 
-.jumbotron .lg-image {
-  max-height: 24rem;
+.lg-image {
   width: 60%;
-  display: block;
-  background-image: url("images/banner.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin: 2rem 1.5rem 2rem 1.5rem;
+  margin: 2rem 0 2rem 1.5rem;
+}
+
+.lg-image img {
+  width: 100%;
 }
 
 .jumbotron .information {
   width: 30%;
+  margin-left: 1.5rem;
 }
 
 .main-container {
@@ -108,16 +108,9 @@ nav.desktop ul li{
   flex-direction: row;
 }
 
-.sm-image #one {
-  background-image: url("images/information-orientation.jpg");
-}
-
-.sm-image #two {
-  background-image: url("images/information-campus.jpg");
-}
-
-.sm-image #one {
-  background-image: url("images/information-guest-lecture.jpg");
+.sm-image {
+  width: 35%;
+  overflow: hidden;
 }
 
 .container-learn {
