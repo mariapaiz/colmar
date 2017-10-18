@@ -23,12 +23,65 @@ nav.desktop ul li{
   color: black;
 }
 
+#general {
+  max-width: 75rem;
+  display: block;
+  margin: auto;
+}
+
+.button {
+  background-color: #303030;
+  border: none;
+  color: white;
+  padding: 0.5rem 0.5rem;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.jumbotron {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  background-color: #e0e0e0;
+}
+
+.jumbotron .lg-image {
+  max-height: 24rem;
+  width: 60%;
+  display: block;
+  background-image: url("images/banner.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 2rem 1.5rem 2rem 1.5rem;
+}
+
+.jumbotron .information {
+  width: 30%;
+}
+
 .main-container {
   display: flex;
+  background-color:
 }
 
 .main-story {
   flex-direction: row;
+  padding: 2rem 1.5rem 2rem 1.5rem;
+  background-color: #E0E0E0;
+}
+
+.main-story .lg-image {
+  background-image: url("images/information-main.jpg");
+  margin-right: 1.5rem;
+}
+
+.lg-image {
+  max-width: 60%;
 }
 
 .container-learn {
@@ -50,4 +103,10 @@ nav.desktop ul li{
 
 .course-categories-mobile {
   display: none;
+}
+
+.video {
+  position: relative;
+  height: 0;
+  overflow: hidden;
 }
