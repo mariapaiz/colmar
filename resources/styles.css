@@ -6,14 +6,17 @@ html {
   font-family: "Raleway", sans-serif;
 }
 
-div {
+/*div {
   border: 1px solid black;
-}
+}*/
 
 header {
   width: 100%;
 }
 
+p {
+  font-size: 14px;
+}
 .logo {
   display: inline-block;
 }
@@ -75,25 +78,27 @@ nav.desktop ul li{
 .main-container {
   display: flex;
   background-color:
+  border-bottom: solid 1px #e0e0e0;
 }
 
 .main-story {
   flex-direction: row;
-  padding: 2rem 1.5rem 2rem 1.5rem;
-  background-color: #E0E0E0;
   width: 60%;
+  padding: 0rem 0 2rem 1.5rem;
 }
 
-.main-container .main-story .lg-image {
-  background-image: url("images/information-main.jpg");
-  margin-right: 1.5rem;
-  margin-bottom: 2rem;
+.main-image {
+  width: 100%;
+}
+
+.main-image img {
   width: 100%;
 }
 
 .information p {
   margin-top: 1.5rem;
 }
+
 .information span {
   font-size: 0.75rem;
 }
@@ -101,33 +106,63 @@ nav.desktop ul li{
 .side-story {
   display: flex;
   flex-direction: column;
+  margin-left: 1.5rem;
+  width: 40%;
 }
 
 .story {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .sm-image {
   width: 35%;
+  margin: 1rem 1rem 1rem 1rem;
+  height: auto;
   overflow: hidden;
+}
+
+.sm-image img {
+  width: 100%;
+}
+
+.learn {
+  background-color: #e0e0e0;
+}
+
+.title {
+  display: block;
+  text-align: center;
+  padding-top: 2rem;
 }
 
 .container-learn {
   display: flex;
   flex-direction: row;
+  padding: 0 4.5rem 2rem 4.5rem;
 }
 
-.title {
-
-}
-
-.top-row {
-  flex-direction: row;
+.course-categories-desktop {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
 }
 
 .course {
+  background-color: white;
+  width: 30%;
   flex-direction: row;
+  margin-top: 1rem;
+}
+
+.course .md-image img {
+  width: 100%;
+}
+
+.details {
+  padding: 1rem;
 }
 
 .course-categories-mobile {
@@ -135,7 +170,10 @@ nav.desktop ul li{
 }
 
 .video {
-  position: relative;
-  height: 0;
+  width: 100%;
   overflow: hidden;
+}
+
+.video video {
+  width: 100%;
 }
