@@ -6,23 +6,34 @@ html {
   font-family: "Raleway", sans-serif;
 }
 
-/*div {
-  border: 1px solid black;
-}*/
+.container {
+  display: flex;
+  align-items: center;
+}
 
 header {
   width: 100%;
+  margin-left: 1.5rem;
+  display: flex;
 }
 
 p {
   font-size: 14px;
 }
+
 .logo {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  flex-grow: 2;
+}
+
+.logo span {
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 nav.desktop {
-  display: inline-block;
+  display: flex;
 }
 
 .nav-mobile {
@@ -31,26 +42,24 @@ nav.desktop {
 
 nav.desktop ul li{
   display: inline;
+  margin-left: 2rem;
+}
+
+nav a {
+  text-decoration: none;
   color: black;
+}
+
+nav a:hover{
+  text-decoration: underline;
+  color: #104E8B;
+  font-weight: bold;
 }
 
 #general {
   max-width: 75rem;
   display: block;
   margin: auto;
-}
-
-.button {
-  background-color: #303030;
-  border: none;
-  color: white;
-  padding: 0.5rem 0.5rem;
-  width: 100%;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 4px;
 }
 
 .jumbotron {
@@ -61,8 +70,12 @@ nav.desktop ul li{
   background-color: #e0e0e0;
 }
 
-.lg-image {
+.jumbotron-image {
   width: 60%;
+}
+
+.lg-image {
+  width: 100%;
   margin: 2rem 0 2rem 1.5rem;
 }
 
@@ -70,15 +83,47 @@ nav.desktop ul li{
   width: 100%;
 }
 
-.jumbotron .information {
-  width: 30%;
-  margin-left: 1.5rem;
+.jmb-story {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 40%;
+  padding-left: 4rem;
+}
+
+.info {
+  width: 100%;
+  margin-right: 2rem;
+}
+
+.button {
+  background-color: #104E8B;
+  border: none;
+  color: white;
+  padding: 1rem 1rem;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-top: 1.5rem;
+  font-size: 1.45rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+.button:hover {
+  background-color: #003F87;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(158,158,158,1);
+  -moz-box-shadow: 0px 5px 10px 0px rgba(158,158,158,1);
+  box-shadow: 0px 5px 10px 0px rgba(158,158,158,1);
 }
 
 .main-container {
   display: flex;
-  background-color:
   border-bottom: solid 1px #e0e0e0;
+  margin-top: 2rem;
 }
 
 .main-story {
@@ -93,10 +138,12 @@ nav.desktop ul li{
 
 .main-image img {
   width: 100%;
+  padding-top: 1rem;
 }
 
-.information p {
+.information .big-desc {
   margin-top: 1.5rem;
+  font-size: 1.15rem;
 }
 
 .information span {
@@ -114,6 +161,11 @@ nav.desktop ul li{
   display: flex;
   flex-direction: row;
   align-items: center;
+  border-left: solid 1px #E0E0E0;
+}
+
+.story:hover {
+background-color: #E0E0E0;
 }
 
 .sm-image {
@@ -125,6 +177,20 @@ nav.desktop ul li{
 
 .sm-image img {
   width: 100%;
+}
+
+.story .description {
+  width: 65%;
+  padding-right: 1rem;
+}
+
+.description a{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.description a:hover{
+  text-decoration: underline;
 }
 
 .learn {
@@ -154,7 +220,10 @@ nav.desktop ul li{
   background-color: white;
   width: 30%;
   flex-direction: row;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(158,158,158,1);
+  -moz-box-shadow: 0px 5px 10px 0px rgba(158,158,158,1);
+  box-shadow: 0px 5px 10px 0px rgba(158,158,158,1);
 }
 
 .course .md-image img {
@@ -176,4 +245,14 @@ nav.desktop ul li{
 
 .video video {
   width: 100%;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  flex-grow: 2;
+}
+
+.footer span {
+  margin-left: 1.5rem;
 }
