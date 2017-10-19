@@ -1,3 +1,5 @@
+/* General */
+
 html {
   font-size: 16px;
 }
@@ -10,6 +12,18 @@ html {
   display: flex;
   align-items: center;
 }
+
+#general {
+  max-width: 75rem;
+  display: block;
+  margin: auto;
+}
+
+/* Begin code for Desktop */
+
+@media screen and (min-width: 481px) {
+
+/* Header */
 
 header {
   width: 100%;
@@ -31,6 +45,8 @@ p {
   font-weight: bold;
   font-size: 1.5rem;
 }
+
+/* Header -navigation */
 
 nav.desktop {
   display: flex;
@@ -56,11 +72,7 @@ nav a:hover{
   font-weight: bold;
 }
 
-#general {
-  max-width: 75rem;
-  display: block;
-  margin: auto;
-}
+/* Jumbotron */
 
 .jumbotron {
   display: flex;
@@ -119,6 +131,8 @@ nav a:hover{
   -moz-box-shadow: 0px 5px 10px 0px rgba(158,158,158,1);
   box-shadow: 0px 5px 10px 0px rgba(158,158,158,1);
 }
+
+/* Second section */
 
 .main-container {
   display: flex;
@@ -193,6 +207,8 @@ background-color: #E0E0E0;
   text-decoration: underline;
 }
 
+/* Third section */
+
 .learn {
   background-color: #e0e0e0;
 }
@@ -238,6 +254,8 @@ background-color: #E0E0E0;
   display: none;
 }
 
+/* Final section with video */
+
 .video {
   width: 100%;
   overflow: hidden;
@@ -247,6 +265,8 @@ background-color: #E0E0E0;
   width: 100%;
 }
 
+/* Footer */
+
 .footer {
   display: flex;
   align-items: center;
@@ -255,4 +275,58 @@ background-color: #E0E0E0;
 
 .footer span {
   margin-left: 1.5rem;
+}
+}
+
+/* Begin code for Breakpoint */
+
+@media only screen and (max-width: 480px) {
+
+  .logo {
+    display: none;
+  }
+
+  nav.desktop {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: flex;
+  }
+
+  nav.mobile ul li {
+    display: inline;
+    margin: 0;
+  }
+
+  .mobile {
+    justify-content: space-between;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .course-categories-desktop {
+    display: none;
+  }
+
+  .course-categories-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1rem 0 1rem;
+  }
+
+  .course-mb {
+    width: 100%;
+    padding: 1rem;
+    text-align: left;
+    background-color: #E0E0E0;
+    margin-bottom: 0.5rem;
+  }
+
+  .mb {
+    display: none;
+  }
 }
