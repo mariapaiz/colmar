@@ -13,26 +13,62 @@ html {
   align-items: center;
 }
 
-#general {
-  max-width: 75rem;
-  display: block;
-  margin: auto;
+header {
+  width: 100%;
+  display: flex;
 }
 
-/* Begin code for Desktop */
+/* jumbotron */
+
+p {
+  font-size: 14px;
+}
+
+.button {
+  background-color: #104E8B;
+  border: none;
+  color: white;
+  padding: 1rem 1rem;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-top: 1.5rem;
+  font-size: 1.45rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+.jumbotron {
+  background-color: #E0E0E0;
+  width: 100%;
+}
+
+.info {
+  width: 100%;
+  margin-right: 2rem;
+}
+
+.lg-image img {
+  width: 100%;
+}
+
+/*--------------------- Begin code for Desktop ----------------*/
 
 @media screen and (min-width: 481px) {
+
+  #general {
+    max-width: 75rem;
+    display: block;
+    margin: auto;
+  }
 
 /* Header */
 
 header {
-  width: 100%;
   margin-left: 1.5rem;
-  display: flex;
-}
-
-p {
-  font-size: 14px;
 }
 
 .logo {
@@ -78,8 +114,6 @@ nav a:hover{
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 100%;
-  background-color: #e0e0e0;
 }
 
 .jumbotron-image {
@@ -91,38 +125,12 @@ nav a:hover{
   margin: 2rem 0 2rem 1.5rem;
 }
 
-.lg-image img {
-  width: 100%;
-}
-
 .jmb-story {
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 40%;
   padding-left: 4rem;
-}
-
-.info {
-  width: 100%;
-  margin-right: 2rem;
-}
-
-.button {
-  background-color: #104E8B;
-  border: none;
-  color: white;
-  padding: 1rem 1rem;
-  width: 100%;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 4px;
-  margin-top: 1.5rem;
-  font-size: 1.45rem;
-  font-weight: bold;
-  letter-spacing: 0.1rem;
 }
 
 .button:hover {
@@ -146,10 +154,6 @@ nav a:hover{
   padding: 0rem 0 2rem 1.5rem;
 }
 
-.main-image {
-  width: 100%;
-}
-
 .main-image img {
   width: 100%;
   padding-top: 1rem;
@@ -162,6 +166,10 @@ nav a:hover{
 
 .information span {
   font-size: 0.75rem;
+}
+
+.side-story-mobile {
+  display: none;
 }
 
 .side-story {
@@ -278,35 +286,87 @@ background-color: #E0E0E0;
 }
 }
 
-/* Begin code for Breakpoint */
+/*--------------------- Begin code for Breakpoint ----------------------*/
 
 @media only screen and (max-width: 480px) {
 
-  .logo {
-    display: none;
-  }
+/* Header -navigation */
 
-  nav.desktop {
+  .logo, nav.desktop {
     display: none;
   }
 
   .nav-mobile {
     display: flex;
+    width: 100%;
   }
 
-  nav.mobile ul li {
-    display: inline;
-    margin: 0;
+  .nav-mobile nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
   }
 
-  .mobile {
-    justify-content: space-between;
+/* Jumbotron */
+
+  .jumbotron-image {
+    display: flex;
+  }
+
+  .jmb-story .info {
+    margin-left: 1rem;
+  }
+
+  .button {
+    width: 92%;
+    margin-bottom: 2rem;
   }
 
   .title {
     text-align: center;
   }
 
+/* Second section */
+
+  .side-story {
+    display: none;
+  }
+
+  .side-story-mobile{
+    margin-top: 2rem;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .side-story-mobile .story {
+    width: 100%;
+  }
+
+  .side-story-mobile .description {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+  }
+
+  .side-story-mobile .description a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #104E8B
+  }
+
+  .sm-image img {
+    width: 100%;
+    }
+
+  /* Third section */
+
+  .learn {
+    padding-top: 1rem;
+    border-top: 1px solid #E0E0E0;
+  }
+
+  .title h2 {
+    margin-bottom: 1.75rem;
+  }
   .course-categories-desktop {
     display: none;
   }
@@ -328,5 +388,18 @@ background-color: #E0E0E0;
 
   .mb {
     display: none;
+  }
+
+/* Final section with video */
+
+  .thesis {
+    padding-top: 1rem;
+    border-top: 1px solid #E0E0E0;
+  }
+
+/* Footer */
+
+  .footer {
+    margin-top: 2.5rem;
   }
 }
