@@ -39,6 +39,8 @@ p {
   font-size: 1.45rem;
   font-weight: bold;
   letter-spacing: 0.1rem;
+  transition-property: background-color;
+  transition-duration: 500ms;
 }
 
 .jumbotron {
@@ -135,9 +137,6 @@ nav a:hover{
 
 .button:hover {
   background-color: #003F87;
-  -webkit-box-shadow: 0px 5px 10px 0px rgba(158,158,158,1);
-  -moz-box-shadow: 0px 5px 10px 0px rgba(158,158,158,1);
-  box-shadow: 0px 5px 10px 0px rgba(158,158,158,1);
 }
 
 /* Second section */
@@ -184,6 +183,8 @@ nav a:hover{
   flex-direction: row;
   align-items: center;
   border-left: solid 1px #E0E0E0;
+  transition-property: background-color;
+  transition-duration: 500ms;
 }
 
 .story:hover {
